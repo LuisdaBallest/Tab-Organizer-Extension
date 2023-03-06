@@ -1,0 +1,74 @@
+body {
+  width: 400px;
+  background-color:rgb(206, 230, 240) ;
+  margin:0px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: 0px;
+  padding: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(0,149,255);
+  background-color: whitesmoke;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 1rem 0;
+}
+
+li {
+  padding: 0.25rem;
+}
+li:nth-child(odd) {
+  background: rgb(206, 230, 240);
+}
+li:nth-child(even) {
+  background:whitesmoke;
+  margin: 0px;
+}
+
+h3,
+p {
+  margin: 0;
+}
+.point {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+#button-group{
+    border: none;
+  border-radius: 0px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: whitesmoke;
+
+}
+.searchbar{
+    width: 200px;
+}
+#close{
+        height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+#btn-container {
+  display: flex;
+  justify-content: space-between;
+}

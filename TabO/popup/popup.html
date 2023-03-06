@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="icon.png" />
+    </div>
+    <template id="li_template">
+      <li class="point">
+        <a>
+          <h3 class="title">Tab Title</h3>
+          <p class="pathname">Tab Pathname</p>
+        </a>
+        <div id="btn-container">
+            <label for="add">
+            <input type="checkbox" class="chk" id="accept" name="add" value="yes"> Add to Group 
+            </label>
+            <button id="close" class="close" name="close" title="Close Tab">x</button>
+        </div>
+        
+      </li>
+    </template>
+
+    <h1>Active Tabs</h1>
+    <button id="button-group" title="Group Selected Tabs">📚 Group Tabs</button>
+    <input input type="search" class="searchbar" id="search" placeholder="🔍Search..." data-search>
+    <ul id="myUL"></ul>
+
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
