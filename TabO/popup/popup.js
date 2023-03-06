@@ -16,7 +16,6 @@ for (const tab of tabs) {
     await chrome.tabs.update(tab.id, { active: true });
     await chrome.windows.update(tab.windowId, { focused: true });
   });
-  element.value=tab.id
   element.name=title + pathname;
   elements.push(element);
 }
